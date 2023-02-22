@@ -1,4 +1,4 @@
-def greeting(name, options = {})
+def greeting(name, options = {})   #Can define an empty array as a default parameter, which then can be made optional by using control flow with the #empty? method. 
   if options.empty?
     puts "Hi, my name is #{name}"
   else
@@ -9,4 +9,3 @@ end
 
 greeting("Bob")
 greeting("Bob", {age: 62, city: "New York City"})
-greeting("Bob", :test)
